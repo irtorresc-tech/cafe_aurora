@@ -1,13 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Aurora - Servicios</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <h1>servicios</h1>
 
-    <a href="../index.html">regresar</a>
+  <!-- NAVBAR (misma que index) -->
+  <nav class="menu-container">
+    <div class="container">
+      <div class="menu">
+        <a href="../index.html" class="logo">Cafe Aurora</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="../img/menu.png" class="menu-icono" alt="Menú" />
+        </label>
+        <div class="navbar">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#sobre-nosotros">Nosotros</a></li>
+            <li><a href="servicios.html" class="activo">Servicios</a></li>
+            <li><a href="../index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECCIÓN DE SERVICIOS / PRODUCTOS -->
+  <section class="servicios">
+    <div class="container">
+      <h2>Nuestros Productos</h2>
+      <p>Explora nuestra selección de cafés artesanales y productos especiales.</p>
+
+      <div class="productos-grid">
+
+        <!-- PRODUCTO 1 -->
+        <div class="producto-card">
+          <img src="../img/Café Molido Premium.webp" alt="Café molido premium">
+          <h3>Café Molido Premium</h3>
+          <p class="descripcion">Granos seleccionados de alta montaña, con tueste medio y aroma intenso.</p>
+          <p class="precio">$12.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="producto-card">
+          <img src="../img/Café en Grano Oscuro.JPG" alt="Café en grano oscuro">
+          <h3>Café en Grano Oscuro</h3>
+          <p class="descripcion">Ideal para espresso. Sabor fuerte con notas de cacao y nuez.</p>
+          <p class="precio">$15.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="producto-card">
+          <img src="../img/Café Orgánico.jpg" alt="Café orgánico">
+          <h3>Café Orgánico</h3>
+          <p class="descripcion">100% natural, cultivado sin pesticidas y con procesos sostenibles.</p>
+          <p class="precio">$14.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- PRODUCTO 4 -->
+        <div class="producto-card">
+          <img src="../img/taza aurora" alt="Taza Café Aurora">
+          <h3>Taza Café Aurora</h3>
+          <p class="descripcion">Taza cerámica personalizada con nuestro logo. Perfecta para tu café diario.</p>
+          <p class="precio">$8.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="../scripts.js"></script>
 </body>
 </html>

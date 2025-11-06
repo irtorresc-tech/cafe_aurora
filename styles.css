@@ -299,3 +299,95 @@ img {
     padding: 70px 15px;
   }
 }
+/* ==============================
+   SECCIÓN SERVICIOS / PRODUCTOS
+   ============================== */
+.servicios {
+  padding: 120px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+.servicios h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.servicios p {
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.producto-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 20px;
+}
+
+.producto-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.producto-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.producto-card .descripcion {
+  color: #555;
+  padding: 0 15px;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.producto-card .precio {
+  color: #a67c52;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.btn-comprar {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #a67c52;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background: #8b6543;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .servicios {
+    padding: 80px 15px;
+  }
+}
+
