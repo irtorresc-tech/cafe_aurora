@@ -1,61 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing page</title>
+  <title>Café Aurora</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <script>
-    src = "scripts.js";
-  </script>
 
-<!-- NAVBAR -->
-<nav class="menu-container">
-  <div class="container">
-    <div class="menu">
-      <a href="#" class="logo">Cafe Aurora</a>
-      <input type="checkbox" id="menu" />
-      <label for="menu">
-        <img src="images/menu.png" class="menu-icono" alt="Menú" />
-      </label>
-      <div class="navbar">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#sobre-nosotros">Nosotros</a></li>
-          <li><a href="html/servicios.html">Servicios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+  <!-- NAVBAR -->
+  <nav class="menu-container">
+    <div class="container">
+      <div class="menu">
+        <a href="#" class="logo">Cafe Aurora</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="img/menu.png" class="menu-icono" alt="Menú" />
+        </label>
+        <div class="navbar">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Nosotros</a></li>
+            <li><a href="html/servicios.html">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- HEADER PRINCIPAL -->
-<header class="header-principal">
-  <div class="container">
-    <div class="header-content">
-      <div class="header-txt">
-        <h1>
-          Bienvenido <br />
-          Ven y Disfruta Nuestro Café Fresco
-        </h1>
-        <p>
-          Café orgánico de los mejores granos.
-          Abierto de lunes a sábado. ¡Te esperamos!
-        </p>
-      </div>
-      <div class="header-img">
-        <img src="img/imgh.png" alt="Café fresco" />
+  <!-- HEADER PRINCIPAL -->
+  <header class="header-principal">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-txt">
+          <h1>
+            Bienvenido <br />
+            Ven y Disfruta Nuestro Café Fresco
+          </h1>
+          <p>
+            Café orgánico de los mejores granos.
+            Abierto de lunes a sábado. ¡Te esperamos!
+          </p>
+        </div>
+        <div class="header-img">
+          <img src="img/imgh.png" alt="Café fresco" />
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-
+  <!-- SECCIÓN SOBRE NOSOTROS -->
   <section class="sobre-nosotros" id="sobre-nosotros">
     <div class="sobre-nosotros__contenedor">
       <div class="sobre-nosotros__imagen">
@@ -88,36 +85,36 @@
       </div>
     </div>
   </section>
+
   <!-- SECCIÓN DE CONTACTO -->
-<section id="contacto" class="contacto">
-  <div class="container contacto__contenedor">
-    <h2>Contáctanos</h2>
-    <p>¿Tienes alguna pregunta o sugerencia? ¡Nos encantaría escucharte!</p>
+  <section id="contacto" class="contacto">
+    <div class="container contacto__contenedor">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes alguna pregunta o sugerencia? ¡Nos encantaría escucharte!</p>
 
-    <form class="contacto__formulario">
-      <div class="form-grupo">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-      </div>
+      <form class="contacto__formulario">
+        <div class="form-grupo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
 
-      <div class="form-grupo">
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" placeholder="Tu correo" required>
-      </div>
+        <div class="form-grupo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        </div>
 
-      <div class="form-grupo">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
-      </div>
+        <div class="form-grupo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
 
-      <button type="submit" class="btn-enviar">Enviar mensaje</button>
-    </form>
-  </div>
-</section>
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
 
-
-
-
+  <!-- SCRIPT CORRECTAMENTE ENLAZADO -->
+  <script src="scripts.js"></script>
 </body>
 
 </html>
