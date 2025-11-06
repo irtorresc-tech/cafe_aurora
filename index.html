@@ -1,51 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <script>
-      src = "scripts.js";
-    </script>
 
-    <header>
-      <div class="container">
-        <div class="menu">
-          <a href="#" class="logo">Cafe Aurora</a>
-          <input type="checkbox" id="menu" />
-          <label for="menu">
-            <img src="images/menu.png" class="menu-icono" alt="" />
-          </label>
-          <nav class="navbar">
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="/html/servicios.html">Servicios</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <script>
+    src = "scripts.js";
+  </script>
+
+<!-- NAVBAR -->
+<nav class="menu-container">
+  <div class="container">
+    <div class="menu">
+      <a href="#" class="logo">Cafe Aurora</a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="images/menu.png" class="menu-icono" alt="Menú" />
+      </label>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#sobre-nosotros">Nosotros</a></li>
+          <li><a href="html/servicios.html">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER PRINCIPAL -->
+<header class="header-principal">
+  <div class="container">
+    <div class="header-content">
+      <div class="header-txt">
+        <h1>
+          Bienvenido <br />
+          Ven y Disfruta Nuestro Café Fresco
+        </h1>
+        <p>
+          Café orgánico de los mejores granos.
+          Abierto de lunes a sábado. ¡Te esperamos!
+        </p>
+      </div>
+      <div class="header-img">
+        <img src="img/imgh.png" alt="Café fresco" />
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <section class="sobre-nosotros" id="sobre-nosotros">
+    <div class="sobre-nosotros__contenedor">
+      <div class="sobre-nosotros__imagen">
+        <img src="img/yo.jpeg" alt="Foto personal o de trabajo">
+      </div>
+
+      <div class="sobre-nosotros__texto">
+        <div class="bloque">
+          <h2>¿Quién soy?</h2>
+          <p>
+            Soy [Tu nombre], consultor(a) y formador(a) en [tu especialidad].
+            Me apasiona ayudar a personas y negocios a crecer mediante estrategias
+            creativas y efectivas.
+          </p>
+          <ul>
+            <li>Tengo la oportunidad de conocer proyectos únicos y aportar valor real.</li>
+            <li>Disfruto formando a profesionales y aprendiendo de cada experiencia.</li>
+            <li>Creo en la mejora continua y la colaboración.</li>
+          </ul>
         </div>
-        <div class="header-content">
-          <div class="header-txt">
-            <h1>
-                        Bienvendo  <br />
-            </h1>
-            <h1>
-            Ven y Disfruta Nuestro Café Fresco
-            </h1>
-            <p>
-              Café orgánico de los mejores granos. 
-              Abierto de lunes a sábado. ¡Te esperamos!
-            </p>
-          </div>
-          <div class="header-img">
-            <img src="img/imgh.png" alt="" />
-          </div>
+
+        <div class="bloque">
+          <h2>¿Qué es eso del [tu especialidad]?</h2>
+          <p>
+            Es un conjunto de estrategias que combinan creatividad, análisis
+            y comunicación para conectar mejor con el público y generar resultados.
+          </p>
+          <p><strong>El resultado:</strong> una marca más sólida, más visible y más humana.</p>
         </div>
       </div>
-    </header>
-  </body>
+    </div>
+  </section>
+  <!-- SECCIÓN DE CONTACTO -->
+<section id="contacto" class="contacto">
+  <div class="container contacto__contenedor">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes alguna pregunta o sugerencia? ¡Nos encantaría escucharte!</p>
+
+    <form class="contacto__formulario">
+      <div class="form-grupo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="form-grupo">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+      </div>
+
+      <div class="form-grupo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+</body>
+
 </html>
